@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <style>
+    body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
+  </style>
+</head>
+
+<body>
+  <script>
+    d3.csv("Nesting.csv",function(error,data){
+      console.log(data)
+      var nested_data=d3.nest()
+      .key(function(d){return d["Code1"]})
+      .key(function(d){return d["Code2b"]})
+      .key(function(d){return d["code3b"]})
+      .key(function(d){return d["Code4b"]})
+      .key(function(d){return d["Code5b"]})
+      .key(function(d){return d["Code6b"]})
+      .key(function(d){return d["Code7b"]})
+      .key(function(d){return d["Code8b"]})
+      .rollup(function(values){
+        return{
+          total:d3.sum(values,function(d){return d.Amount})
+        }
+      })
+      .entries(data)
+
+      console.log(nested_data)
+    })
+
+  </script>
+</body>

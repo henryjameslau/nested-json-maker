@@ -9,23 +9,42 @@
 
 <body>
   <script>
-    d3.csv("Nesting.csv",function(error,data){
+    d3.csv("nesting2.csv",function(error,data){
       console.log(data)
-      var nested_data=d3.nest()
-      .key(function(d){return d["Code1"]})
-      .key(function(d){return d["Code2b"]})
-      .key(function(d){return d["code3b"]})
-      .key(function(d){return d["Code4b"]})
-      .key(function(d){return d["Code5b"]})
-      .key(function(d){return d["Code6b"]})
-      .key(function(d){return d["Code7b"]})
-      .key(function(d){return d["Code8b"]})
-      .rollup(function(values){
-        return{
-          total:d3.sum(values,function(d){return d.Amount})
-        }
-      })
-      .entries(data)
+      // var nested_data=d3.nest()
+      // .key(function(d){return d["Code1"]})
+      // .key(function(d){return d["Code2b"]})
+      // .key(function(d){return d["code3b"]})
+      // .key(function(d){return d["Code4b"]})
+      // .key(function(d){return d["Code5b"]})
+      // .key(function(d){return d["Code6b"]})
+      // .key(function(d){return d["Code7b"]})
+      // .key(function(d){return d["Code8b"]})
+      // .rollup(function(values){
+      //   return{
+      //     total:d3.sum(values,function(d){return d.Amount})
+      //   }
+      // })
+      // .entries(data)
+
+      //Thanks be to http://oskarhane.com/create-a-nested-array-recursively-in-javascript/
+
+      function getNestedChildren(arr, parent) {
+          var out = []
+          for(var i in arr) {
+              if(arr[i].parent == parent) {
+                  var children = getNestedChildren(arr, arr[i].id)
+
+                  if(children.length) {
+                      arr[i].children = children
+                  }
+                  out.push(arr[i])
+              }
+          }
+          return out
+      }
+
+      nested_data=getNestedChildren(data,"C0")
 
       console.log(nested_data)
     })

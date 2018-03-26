@@ -1,0 +1,564 @@
+﻿id,parent,Level,Code/Description,Amount
+C0,,0,T: Total,10
+C1,C0,1,"    0and1: Food, beverages & tobacco",10
+C1_C1,C1,2,        0: Food & live animals,10
+C1_C1_C1,C1_C1,3,            00: Live animals,10
+C1_C1_C1_C1,C1_C1_C1,4,                01.4A: Live animals,10
+C1_C1_C1_C2,C1_C1_C1,4,                03.0A: Live marine mammals,10
+C1_C1_C2,C1_C1,3,            01: Meat & meat preparations,10
+C1_C1_C2_C1,C1_C1_C2,4,                01.4B: Snails,10
+C1_C1_C2_C2,C1_C1_C2,4,"                10.1A: Fresh, chilled or frozen meat, meat products for human consumption",10
+C1_C1_C2_C3,C1_C1_C2,4,                10.8A: Meat extracts & juices,10
+C1_C1_C3,C1_C1,3,            02: Dairy products & eggs,10
+C1_C1_C3_C1,C1_C1_C3,4,                01.4C: Eggs in shell,10
+C1_C1_C3_C2,C1_C1_C3,4,"                10.5A: Milk, butter, cheese, yoghurt, ice cream etc",10
+C1_C1_C3_C3,C1_C1_C3,4,                10.8B: Processed eggs,10
+C1_C1_C4,C1_C1,3,            03: Fish & shellfish,10
+C1_C1_C4_C1,C1_C1_C4,4,                03.0B: Fresh or chilled fish & shellfish,10
+C1_C1_C4_C2,C1_C1_C4,4,                10.2A: Processed & preserved fish & shellfish,10
+C1_C1_C5,C1_C1,3,            04and08: Cereals & animal feeding stuffs,10
+C1_C1_C5_C1,C1_C1_C5,4,                04: Cereals,10
+C1_C1_C5_C1_C1,C1_C1_C5_C1,5,                    01.1A: Unmilled cereals,10
+C1_C1_C5_C1_C2,C1_C1_C5_C1,5,                    10.6A: Processed cereals,10
+C1_C1_C5_C1_C3,C1_C1_C5_C1,5,"                    10.7A: Bread, cakes, biscuits & pasta",10
+C1_C1_C5_C1_C4,C1_C1_C5_C1,5,                    11.06: Malt,10
+C1_C1_C5_C2,C1_C1_C5,4,                08: Animal feeding stuffs,10
+C1_C1_C5_C2_C1,C1_C1_C5_C2,5,                    01.1C: Straw & forage,10
+C1_C1_C5_C2_C2,C1_C1_C5_C2,5,                    10.1B: Meat meal for animals,10
+C1_C1_C5_C2_C3,C1_C1_C5_C2,5,                    10.2B: Fish meal for animals,10
+C1_C1_C5_C2_C4,C1_C1_C5_C2,5,                    10.3B: Vegetable waste,10
+C1_C1_C5_C2_C5,C1_C1_C5_C2,5,                    10.4A: Oilcake,10
+C1_C1_C5_C2_C6,C1_C1_C5_C2,5,"                    10.6D: Bran, residues of starch manufacture",10
+C1_C1_C5_C2_C7,C1_C1_C5_C2,5,                    10.8E: Residues of sugar manufactures,10
+C1_C1_C5_C2_C8,C1_C1_C5_C2,5,                    10.9: Prepared feeds for farm animals & pets,10
+C1_C1_C5_C2_C9,C1_C1_C5_C2,5,                    11.02A: Wine lees,10
+C1_C1_C5_C2_C10,C1_C1_C5_C2_,5,                    11.05A: Brewing dregs,10
+C1_C1_C6,C1_C1,3,            05: Vegetables & fruit,10
+C1_C1_C6_C1,C1_C1_C6,4,                01.1B: Fresh or chilled vegetables & vegetable products,10
+C1_C1_C6_C2,C1_C1_C6,4,"                01.2A: Fruits, nuts & berries",10
+C1_C1_C6_C3,C1_C1_C6,4,"                10.3A: Processed & preserved fruit & vegetable, fruit & vegetable juices",10
+C1_C1_C6_C4,C1_C1_C6,4,"                10.6B: Vegetable flour & meal, tapioca",10
+C1_C1_C7,C1_C1,3,            06: Sugar,10
+C1_C1_C7_C1,C1_C1_C7,4,                01.4D: Honey,10
+C1_C1_C7_C2,C1_C1_C7,4,                10.5B: Lactose,10
+C1_C1_C7_C3,C1_C1_C7,4,"                10.6C: Glucose, fructose etc",10
+C1_C1_C7_C4,C1_C1_C7,4,                10.8C: Sugar & sugar confectionery,10
+C1_C1_C8,C1_C1,3,"            07: Coffee, tea, cocoa etc",10
+C1_C1_C8_C1,C1_C1_C8,4,                01.2B: Beverage crops & raw spices,10
+C1_C1_C8_C2,C1_C1_C8,4,"                10.8D: Processed tea, coffee, cocoa, chocolate & spices",10
+C1_C1_C9,C1_C1,3,            09: Miscellaneous foods,10
+C1_C1_C9_C1,C1_C1_C9,4,                01.4E: Other edible products of animal origin,10
+C1_C1_C9_C2,C1_C1_C9,4,                10.4B: Margarine & similiar edible fats,10
+C1_C1_C9_C3,C1_C1_C9,4,                10.7B: Couscous,10
+C1_C1_C9_C4,C1_C1_C9,4,                10.8F: Food products n.e.s,10
+C1_C2,C1,2,        1: Beverages & tobacco,10
+C1_C2_C1,C1_C2,3,            11: Beverages,10
+C1_C2_C1_C1,C1_C2_C1,4,                11.01: Distilled alcoholic beverages,10
+C1_C2_C1_C2,C1_C2_C1,4,                11.02B: Wine,10
+C1_C2_C1_C3,C1_C2_C1,4,                11.03: Cider & other fruit wines,10
+C1_C2_C1_C4,C1_C2_C1,4,                11.04: Other non-distilled fermented beverages,10
+C1_C2_C1_C5,C1_C2_C1,4,                11.05B: Beer,10
+C1_C2_C1_C6,C1_C2_C1,4,                11.07: Soft drinks & bottled wines,10
+C1_C2_C2,C1_C2,3,            12: Tobacco,10
+C1_C2_C2_C1,C1_C2_C2,4,                01.1D: Raw tobacco,10
+C1_C2_C2_C2,C1_C2_C2,4,                12.0: Tobacco products,10
+C2,C0,1,    2and4: Basic materials,10
+C2_C1,C2,2,        2: Crude materials,10
+C2_C1_C1,C2_C1,3,            24: Wood & cork,10
+C2_C1_C1_C1,C2_C1_C1,4,                02.2: Wood in the rough,10
+C2_C1_C1_C2,C2_C1_C1,4,                02.3B: Raw cork,10
+C2_C1_C1_C3,C2_C1_C1,4,                16.1A: Wood simple worked,10
+C2_C1_C1_C4,C2_C1_C1,4,                16.2A: Processed & waste cork,10
+C2_C1_C1_C5,C2_C1_C1,4,                20.14A: Wood charcoal,10
+C2_C1_C1_C6,C2_C1_C1,4,                38.1C: Wood waste,10
+C2_C1_C2,C2_C1,3,            25: Pulp & waste paper,10
+C2_C1_C2_C1,C2_C1_C2,4,                17.1A: Wood pulp,10
+C2_C1_C2_C2,C2_C1_C2,4,                38.1D: Paper waste & scrap,10
+C2_C1_C3,C2_C1,3,            26: Textile fibres,10
+C2_C1_C3_C1,C2_C1_C3,4,                01.1F: Fibre crops,10
+C2_C1_C3_C2,C2_C1_C3,4,                01.4G: Shorn greasy wool & other animal hair,10
+C2_C1_C3_C3,C2_C1_C3,4,                10.1D: Pulled greasy wool,10
+C2_C1_C3_C4,C2_C1_C3,4,                10.4D: Cotton linters,10
+C2_C1_C3_C5,C2_C1_C3,4,                13.1A: Processed textile fibres,10
+C2_C1_C3_C6,C2_C1_C3,4,                13.9A: Rags & worn out textiles,10
+C2_C1_C3_C7,C2_C1_C3,4,                14.1A: Worn clothing,10
+C2_C1_C3_C8,C2_C1_C3,4,                20.6A: Unworked man-made fibres,10
+C2_C1_C3_C9,C2_C1_C3,4,                38.1E: Yarn waste,10
+C2_C1_C4,C2_C1,3,            28: Metal ores & scrap,10
+C2_C1_C4_C1,C2_C1_C4,4,                07.1: Iron ores,10
+C2_C1_C4_C2,C2_C1_C4,4,                07.2: Non-ferrous metal ores & concentrates,10
+C2_C1_C4_C3,C2_C1_C4,4,                20.13B: Roasted iron pyrites,10
+C2_C1_C4_C4,C2_C1_C4,4,                24.1A: Remelting scrap ingots of iron or steel,10
+C2_C1_C4_C5,C2_C1_C4,4,                24.4A: Processed non-ferrous metal ores,10
+C2_C1_C4_C6,C2_C1_C4,4,                38.1G: Other metal waste,10
+C2_C1_C5,C2_C1,3,            2OCM: Other crude materials,10
+C2_C1_C5_C1,C2_C1_C5,4,"                21: Hides, skins & furskins",10
+C2_C1_C5_C1_C1,C2_C1_C5_C1,5,                    01.4F: Hides & skins of other animals,10
+C2_C1_C5_C1_C2,C2_C1_C5_C1,5,"                    10.1C: Hides & skins of cows, goats & sheep",10
+C2_C1_C5_C1_C3,C2_C1_C5_C1,5,                    38.1A: Leather waste,10
+C2_C1_C5_C2,C2_C1_C5,4,                22: Oil-seeds & oleaginous fruits,10
+C2_C1_C5_C2_C1,C2_C1_C5_C2,5,                    01.1E: Oil seeds,10
+C2_C1_C5_C2_C2,C2_C1_C5_C2,5,                    01.2C: Oleaginous fruits,10
+C2_C1_C5_C2_C3,C2_C1_C5_C2,5,                    10.4C: Flours & meals of oils seeds & fruits,10
+C2_C1_C5_C3,C2_C1_C5,4,                23: Crude rubber,10
+C2_C1_C5_C3_C1,C2_C1_C5_C3,5,                    01.2D: Natural rubber,10
+C2_C1_C5_C3_C2,C2_C1_C5_C3,5,                    02.3A: Natural gums,10
+C2_C1_C5_C3_C3,C2_C1_C5_C3,5,                    20.17: Synthetic rubber,10
+C2_C1_C5_C3_C4,C2_C1_C5_C3,5,                    22.1A: Reclaimed rubber,10
+C2_C1_C5_C3_C5,C2_C1_C5_C3,5,                    38.1B: Rubber waste,10
+C2_C1_C5_C4,C2_C1_C5,4,                27: Crude minerals & fertilisers,10
+C2_C1_C5_C4_C1,C2_C1_C5_C4,5,                    06.1A: Bituminous or oil shale & tar sands,10
+C2_C1_C5_C4_C2,C2_C1_C5_C4,5,"                    08.1: Unworked stone, gravel, sand, clays & kaolin",10
+C2_C1_C5_C4_C3,C2_C1_C5_C4,5,                    08.9A: Other minerals,10
+C2_C1_C5_C4_C4,C2_C1_C5_C4,5,                    10.8G: Food-grade salt,10
+C2_C1_C5_C4_C5,C2_C1_C5_C4,5,                    20.13A: Processed sulphur,10
+C2_C1_C5_C4_C6,C2_C1_C5_C4,5,                    20.15A: Animal & vegetable fertilisers,10
+C2_C1_C5_C4_C7,C2_C1_C5_C4,5,                    23.5A: Plaster & calcined dolomite,10
+C2_C1_C5_C4_C8,C2_C1_C5_C4,5,                    23.9A: Tarred macadam,10
+C2_C1_C5_C4_C9,C2_C1_C5_C4,5,                    32.1A: Worked industrial diamonds & powder of precious stones,10
+C2_C1_C5_C4_C10,C2_C1_C5_C4_,5,                    38.1F: Slag from iron & steel manufacture,10
+C2_C1_C5_C4_C11,C2_C1_C5_C4_,5,                    38.2A: Ash from waste incineration,10
+C2_C1_C5_C5,C2_C1_C5,4,                29: Other crude animal & vegetable materials,10
+C2_C1_C5_C5_C1,C2_C1_C5_C5,5,"                    01.1G: Cut flowers, seeds",10
+C2_C1_C5_C5_C2,C2_C1_C5_C5,5,                    01.2E: Other perennial crops,10
+C2_C1_C5_C5_C3,C2_C1_C5_C5,5,                    01.3: Planting material,10
+C2_C1_C5_C5_C4,C2_C1_C5_C5,5,                    01.4H: Bovine semen,10
+C2_C1_C5_C5_C5,C2_C1_C5_C5,5,                    02.1: Trees & their seeds,10
+C2_C1_C5_C5_C6,C2_C1_C5_C5,5,                    02.3C: Other wild growing products,10
+C2_C1_C5_C5_C7,C2_C1_C5_C5,5,                    03.0C: Other aquatic plant & animal products,10
+C2_C1_C5_C5_C8,C2_C1_C5_C5,5,"                    10.1E: Inedible offal, unworked bird skins & feathers",10
+C2_C1_C5_C5_C9,C2_C1_C5_C5,5,                    10.2C: Inedible products of fish & shellfish,10
+C2_C1_C5_C5_C10,C2_C1_C5_C5_,5,                    10.8H: Vegetable extracts,10
+C2_C1_C5_C5_C11,C2_C1_C5_C5_,5,                    96.0: Human hair,10
+C2_C2,C2,2,        4: Animal & vegetable oils & fats,10
+C2_C2_C1,C2_C2,3,            41: Animal oils & fats,10
+C2_C2_C1_C1,C2_C2_C1,4,                10.1F: Crude animal fats,10
+C2_C2_C1_C2,C2_C2_C1,4,                10.4E: Processed animal oils & fats,10
+C2_C2_C1_C3,C2_C2_C1,4,                13.1B: Wool grease,10
+C2_C2_C2,C2_C2,3,            42: Vegetable oils & fats,10
+C2_C2_C2_C1,C2_C2_C2,4,                10.4F: Vegetable oils,10
+C2_C2_C2_C2,C2_C2_C2,4,                10.6E: Maize oil,10
+C2_C2_C3,C2_C2,3,            43: Processed oils & fats,10
+C2_C2_C3_C1,C2_C2_C3,4,                01.4I: Beeswax,10
+C2_C2_C3_C2,C2_C2_C3,4,                10.4G: Hydrogenated fats & oils and vegetable juices,10
+C2_C2_C3_C3,C2_C2_C3,4,                20.5A: Chemically modified fats & oils,10
+C3,C0,1,    3: Fuels,10
+C3_C1,C3,2,        33: Oil,10
+C3_C1_C1,C3_C1,3,            33O: Crude oil,10
+C3_C1_C1_C1,C3_C1_C1,4,                06.1B: Crude petroleum oils,10
+C3_C1_C2,C3_C1,3,            33R: Refined oil,10
+C3_C1_C2_C1,C3_C1_C2,4,                19.1B: Coal tar & pitch,10
+C3_C1_C2_C2,C3_C1_C2,4,                19.2B: Refined oils & other petroleum products,10
+C3_C1_C2_C3,C3_C1_C2,4,                20.14B: Products of tar distillation,10
+C3_C1_C2_C4,C3_C1_C2,4,                23.9B: Bituminous mixtures,10
+C3_C1_C2_C5,C3_C1_C2,4,                38.1H: Waste oils,10
+C3_C2,C3,2,        3OF: Fuels other than oil,10
+C3_C2_C1,C3_C2,3,"            32: Coal, coke & briquettes",10
+C3_C2_C1_C1,C3_C2_C1,4,                05.1: Coal,10
+C3_C2_C1_C2,C3_C2_C1,4,                05.2: Lignite,10
+C3_C2_C1_C3,C3_C2_C1,4,                08.9B: Peat,10
+C3_C2_C1_C4,C3_C2_C1,4,"                19.1A: Coke, semi-coke & retort carbon",10
+C3_C2_C1_C5,C3_C2_C1,4,                19.2A: Briquettes,10
+C3_C2_C2,C3_C2,3,            34: Gas,10
+C3_C2_C2_C1,C3_C2_C2,4,                06.2: Natural gas,10
+C3_C2_C2_C2,C3_C2_C2,4,                19.2C: Petroleum gases & other gaseous hydrocarbons,10
+C3_C2_C2_C3,C3_C2_C2,4,                35.2: Manufactured gas,10
+C3_C2_C3,C3_C2,3,            35: Electricity,10
+C3_C2_C3_C1,C3_C2_C3,4,                35.1: Electricity,10
+C4,C0,1,    5to8: Manufactures,10
+C4_C1,C4,2,        5and6: Semi-manufactures,10
+C4_C1_C1,C4_C1,3,            5: Chemicals,10
+C4_C1_C1_C1,C4_C1_C1,4,                51: Organic chemicals,10
+C4_C1_C1_C1_C1,C4_C1_C1_C1,5,                    20.14C: Organic compounds n.e.s,10
+C4_C1_C1_C1_C2,C4_C1_C1_C1,5,                    20.4A: Glycerol,10
+C4_C1_C1_C1_C3,C4_C1_C1_C1,5,                    21.1A: Pharmaceutical compounds,10
+C4_C1_C1_C2,C4_C1_C1,4,                52: Inorganic chemicals,10
+C4_C1_C1_C2_C1,C4_C1_C1_C2,5,                    20.11: Industrial gases,10
+C4_C1_C1_C2_C2,C4_C1_C1_C2,5,"                    20.12A: Metal oxides, peroxides & hydroxides",10
+C4_C1_C1_C2_C3,C4_C1_C1_C2,5,                    20.13C: Inorganic chemicals n.e.s,10
+C4_C1_C1_C2_C4,C4_C1_C1_C2,5,                    20.15B: Chemicals used as fertilisers,10
+C4_C1_C1_C2_C5,C4_C1_C1_C2,5,                    23.9C: Artificial corundum,10
+C4_C1_C1_C2_C6,C4_C1_C1_C2,5,                    24.4B: Processed nuclear fuel,10
+C4_C1_C1_C2_C7,C4_C1_C1_C2,5,                    38.1I: Spent fuel elements of nuclear reactors,10
+C4_C1_C1_C3,C4_C1_C1,4,"                53: Dyeing, tanning & colouring materials",10
+C4_C1_C1_C3_C1,C4_C1_C1_C3,5,                    20.12B: Other dyes & pigments,10
+C4_C1_C1_C3_C2,C4_C1_C1_C3,5,"                    20.3: Paints, varnishes & printing ink",10
+C4_C1_C1_C4,C4_C1_C1,4,                54: Medicinal & pharmaceutical products,10
+C4_C1_C1_C4_C1,C4_C1_C1_C4,5,                    21.1B: Other basic pharmaceutical products,10
+C4_C1_C1_C4_C2,C4_C1_C1_C4,5,                    21.2: Pharmaceutical preparations,10
+C4_C1_C1_C4_C3,C4_C1_C1_C4,5,                    22.2A: Appliances for ostomy use,10
+C4_C1_C1_C4_C4,C4_C1_C1_C4,5,                    32.5A: Medical articles n.e.s,10
+C4_C1_C1_C4_C5,C4_C1_C1_C4,5,                    38.1J: Pharmaceutical waste,10
+C4_C1_C1_C5,C4_C1_C1,4,                55: Toilet & cleansing preparations,10
+C4_C1_C1_C5_C1,C4_C1_C1_C5,5,"                    20.4B: Perfumes, cleaning, polishing & toilet peparations n.e.s",10
+C4_C1_C1_C5_C2,C4_C1_C1_C5,5,                    20.5B: Essential oils,10
+C4_C1_C1_C6,C4_C1_C1,4,                57and58: Plastics,10
+C4_C1_C1_C6_C1,C4_C1_C1_C6,5,                    57: Plastics in primary forms,10
+C4_C1_C1_C6_C1_C1,C4_C1_C1_C6_C1,6,                        20.16: Plastics in primary forms,10
+C4_C1_C1_C6_C1_C2,C4_C1_C1_C6_C1,6,                        38.1K: Plastic waste,10
+C4_C1_C1_C6_C2,C4_C1_C1_C6,5,                    58: Plastics in non-primary forms,10
+C4_C1_C1_C6_C2_C1,C4_C1_C1_C6_C2,6,                        22.2B: Plastics in non-primary forms,10
+C4_C1_C1_C7,C4_C1_C1,4,                56and59: Fertilisers & other chemicals,10
+C4_C1_C1_C7_C1,C4_C1_C1_C7,5,                    56: Processed fertilisers,10
+C4_C1_C1_C7_C1_C1,C4_C1_C1_C7_C1,6,                        20.15C: Other mineral & chemical fertilisers,10
+C4_C1_C1_C7_C2,C4_C1_C1_C7,5,                    59: Other chemicals,10
+C4_C1_C1_C7_C2_C1,C4_C1_C1_C7_C2,6,                        10.5C: Casein,10
+C4_C1_C1_C7_C2_C2,C4_C1_C1_C7_C2,6,                        10.6F: Starches,10
+C4_C1_C1_C7_C2_C3,C4_C1_C1_C7_C2,6,                        20.14D: Derivates of vegetables or resin products,10
+C4_C1_C1_C7_C2_C4,C4_C1_C1_C7_C2,6,                        20.2: Pesticides & other agrochemical products,10
+C4_C1_C1_C7_C2_C5,C4_C1_C1_C7_C2,6,                        20.4C: Artificial waxes,10
+C4_C1_C1_C7_C2_C6,C4_C1_C1_C7_C2,6,                        20.5C: Other chemical products,10
+C4_C1_C1_C7_C2_C7,C4_C1_C1_C7_C2,6,                        23.6A: Ready-mixed concrete & mortars,10
+C4_C1_C1_C7_C2_C8,C4_C1_C1_C7_C2,6,                        23.9D: Graphite preparations,10
+C4_C1_C1_C7_C2_C9,C4_C1_C1_C7_C2,6,                        37.0: Sewage sludge,10
+C4_C1_C1_C7_C2_C10,C4_C1_C1_C7_C2_,6,"                        38.1L: Municipal waste, other chemical waste & residues",10
+C4_C1_C1_C7_C2_C11,C4_C1_C1_C7_C2_,6,                        38.2B: Waste organic solvents,10
+C4_C1_C2,C4_C1,3,            6: Material manufactures,10
+C4_C1_C2_C1,C4_C1_C2,4,                61: Leather manufactures,10
+C4_C1_C2_C1_C1,C4_C1_C2_C1,5,                    15.1A: Leather & leather articles n.e.s,10
+C4_C1_C2_C2,C4_C1_C2,4,                62: Rubber manufactures,10
+C4_C1_C2_C2_C1,C4_C1_C2_C2,5,                    22.1B: Rubber products n.e.s,10
+C4_C1_C2_C2_C2,C4_C1_C2_C2,5,                    38.1M: Used rubber tyres,10
+C4_C1_C2_C3,C4_C1_C2,4,                63: Wood & cork manufactures,10
+C4_C1_C2_C3_C1,C4_C1_C2_C3,5,"                    16.1B: Wooden stakes, wood flour etc",10
+C4_C1_C2_C3_C2,C4_C1_C2_C3,5,                    16.2B: Wood & cork manufactures n.e.s,10
+C4_C1_C2_C4,C4_C1_C2,4,                64: Paper & paperboard,10
+C4_C1_C2_C4_C1,C4_C1_C2_C4,5,                    17.1B: Paper & paperboard,10
+C4_C1_C2_C4_C2,C4_C1_C2_C4,5,                    17.2A: Paper & paperboard articles n.e.s,10
+C4_C1_C2_C5,C4_C1_C2,4,                65: Textile fabrics,10
+C4_C1_C2_C5_C1,C4_C1_C2_C5,5,                    13.1C: Textile yarn,10
+C4_C1_C2_C5_C2,C4_C1_C2_C5,5,                    13.2: Woven textiles,10
+C4_C1_C2_C5_C3,C4_C1_C2_C5,5,                    13.9B: Textile articles n.e.s,10
+C4_C1_C2_C5_C4,C4_C1_C2_C5,5,                    14.1B: Hat shapes & forms,10
+C4_C1_C2_C5_C5,C4_C1_C2_C5,5,                    17.2B: Wadding & textile wall coverings,10
+C4_C1_C2_C5_C6,C4_C1_C2_C5,5,                    20.6B: Man-made filament yarn,10
+C4_C1_C2_C5_C7,C4_C1_C2_C5,5,                    22.1C: Rubberized textile fabrics,10
+C4_C1_C2_C5_C8,C4_C1_C2_C5,5,                    22.2C: Linoleum etc,10
+C4_C1_C2_C5_C9,C4_C1_C2_C5,5,                    23.1A: Yarn of glass fibre,10
+C4_C1_C2_C6,C4_C1_C2,4,                66: Mineral manufactures,10
+C4_C1_C2_C6_C1,C4_C1_C2_C6,5,                    66lessP: Mineral manufactures less precious stones,10
+C4_C1_C2_C6_C1_C1,C4_C1_C2_C6_C1,6,                        23.1B: Glass & glass products n.e.s,10
+C4_C1_C2_C6_C1_C2,C4_C1_C2_C6_C1,6,                        23.2: Refactory products,10
+C4_C1_C2_C6_C1_C3,C4_C1_C2_C6_C1,6,"                        23.3: Bricks, tiles etc",10
+C4_C1_C2_C6_C1_C4,C4_C1_C2_C6_C1,6,                        23.4A: Ceramic articles n.e.s,10
+C4_C1_C2_C6_C1_C5,C4_C1_C2_C6_C1,6,                        23.5B: Cement & lime,10
+C4_C1_C2_C6_C1_C6,C4_C1_C2_C6_C1,6,"                        23.6B: Articles of concrete, plaster & cement n.e.s",10
+C4_C1_C2_C6_C1_C7,C4_C1_C2_C6_C1,6,"                        23.7: Cut, shaped & finished stones",10
+C4_C1_C2_C6_C1_C8,C4_C1_C2_C6_C1,6,                        23.9E: Mineral manufactures n.e.s,10
+C4_C1_C2_C6_C1_C9,C4_C1_C2_C6_C1,6,                        38.1N: Glass waste,10
+C4_C1_C2_C6_C2,C4_C1_C2_C6,5,                    66P: Precious stones,10
+C4_C1_C2_C6_C2_C1,C4_C1_C2_C6_C2,6,                        03.0D: Unworked pearls,10
+C4_C1_C2_C6_C2_C2,C4_C1_C2_C6_C2,6,                        08.9C: Unworked precious stones,10
+C4_C1_C2_C6_C2_C3,C4_C1_C2_C6_C2,6,                        20.13D: Unworked synthetic precious stones,10
+C4_C1_C2_C6_C2_C4,C4_C1_C2_C6_C2,6,                        32.1B: Worked pearls & precious stones,10
+C4_C1_C2_C7,C4_C1_C2,4,                67: Iron & steel,10
+C4_C1_C2_C7_C1,C4_C1_C2_C7,5,                    24.1B: Other basic iron & steel,10
+C4_C1_C2_C7_C2,C4_C1_C2_C7,5,"                    24.2: Non-cast steel tubes, pipes & hollow profiles",10
+C4_C1_C2_C7_C3,C4_C1_C2_C7,5,                    24.3A: Other cold drawn steel products,10
+C4_C1_C2_C7_C4,C4_C1_C2_C7,5,                    24.5: Cast iron & steel tubes & pipes,10
+C4_C1_C2_C8,C4_C1_C2,4,                68: Non-ferrous metals,10
+C4_C1_C2_C8_C1,C4_C1_C2_C8,5,                    68lessS: Non-ferrous metals less silver,10
+C4_C1_C2_C8_C1_C1,C4_C1_C2_C8_C1,6,                        24.4D: Non-ferrous metals n.e.s,10
+C4_C1_C2_C8_C1_C2,C4_C1_C2_C8_C1,6,                        38.1O: Other non-ferrous metal waste,10
+C4_C1_C2_C8_C1_C3,C4_C1_C2_C8_C1,6,                        38.3: Secondary raw materials for other non-ferrous base metals,10
+C4_C1_C2_C8_C2,C4_C1_C2_C8,5,                    68S: Silver,10
+C4_C1_C2_C8_C2_C1,C4_C1_C2_C8_C2,6,                        24.4C: Silver,10
+C4_C1_C2_C9,C4_C1_C2,4,                69: Miscellaneous metal manufactures,10
+C4_C1_C2_C9_C1,C4_C1_C2_C9,5,                    24.3B: Sandwich panels of coated steel sheet,10
+C4_C1_C2_C9_C2,C4_C1_C2_C9,5,                    24.4E: Non-ferrous metal products n.e.s,10
+C4_C1_C2_C9_C3,C4_C1_C2_C9,5,                    25.1A: Structural metal products,10
+C4_C1_C2_C9_C4,C4_C1_C2_C9,5,"                    25.2A: Metal tanks, reservoirs & containers",10
+C4_C1_C2_C9_C5,C4_C1_C2_C9,5,"                    25.7A: Cutlery, locks, hinges & tools",10
+C4_C1_C2_C9_C6,C4_C1_C2_C9,5,                    25.9A: Fabricated metal products n.e.s,10
+C4_C1_C2_C9_C7,C4_C1_C2_C9,5,                    27.5A: Non-electric domestic cookers & heaters,10
+C4_C2,C4,2,        7and8: Finished manufactures,10
+C4_C2_C1,C4_C2,3,            7: Machinery & transport equipment,10
+C4_C2_C1_C1,C4_C2_C1,4,                71to77: Machinery,10
+C4_C2_C1_C1_C1,C4_C2_C1_C1,5,                    7M: Mechanical machinery,10
+C4_C2_C1_C1_C1_C1,C4_C2_C1_C1_C1,6,                        7MC: Mechanical machinery (consumer),10
+C4_C2_C1_C1_C1_C1_C1,C4_C2_C1_C1_C1_C1,7,                            71MC: Mechanical power generators (consumer),10
+C4_C2_C1_C1_C1_C1_C1_C1,C4_C2_C1_C1_C1_C1_C1,8,                                28.1A: Outboard motors,10
+C4_C2_C1_C1_C1_C1_C2,C4_C2_C1_C1_C1_C1,7,                            72C: Specialised machinery (consumer),10
+C4_C2_C1_C1_C1_C1_C2_C1,C4_C2_C1_C1_C1_C1_C2,8,                                28.3A: Lawnmowers,10
+C4_C2_C1_C1_C1_C1_C2_C2,C4_C2_C1_C1_C1_C1_C2,8,                                28.9A: Household sewing machines,10
+C4_C2_C1_C1_C1_C1_C3,C4_C2_C1_C1_C1_C1,7,                            74C: General industrial machinery (consumer),10
+C4_C2_C1_C1_C1_C1_C3_C1,C4_C2_C1_C1_C1_C1_C3,8,                                27.5B: Domestic fans & ventilating hoods,10
+C4_C2_C1_C1_C1_C1_C3_C2,C4_C2_C1_C1_C1_C1_C3,8,                                28.2E: Self-contained air conditioning machines; household weighing machines,10
+C4_C2_C1_C1_C1_C2,C4_C2_C1_C1_C1,6,                        7MI: Mechanical machinery (intermediate),10
+C4_C2_C1_C1_C1_C2_C1,C4_C2_C1_C1_C1_C2,7,                            71MI: Mechanical power generators (intermediate),10
+C4_C2_C1_C1_C1_C2_C1_C1,C4_C2_C1_C1_C1_C2_C1,8,                                25.3B: Parts of steam generators & nuclear reactors,10
+C4_C2_C1_C1_C1_C2_C1_C2,C4_C2_C1_C1_C1_C2_C1,8,"                                28.1C: Gas turbines and parts of engines, turbines & fluid power equipment",10
+C4_C2_C1_C1_C1_C2_C1_C3,C4_C2_C1_C1_C1_C2_C1,8,                                29.1A: Internal combustion engines for motor vehicles,10
+C4_C2_C1_C1_C1_C2_C1_C4,C4_C2_C1_C1_C1_C2_C1,8,                                30.3A: Aircraft engines,10
+C4_C2_C1_C1_C1_C2_C2,C4_C2_C1_C1_C1_C2,7,                            72I: Specialised machinery (intermediate),10
+C4_C2_C1_C1_C1_C2_C2_C1,C4_C2_C1_C1_C1_C2_C2,8,                                18.1: Printing type & blocks,10
+C4_C2_C1_C1_C1_C2_C2_C2,C4_C2_C1_C1_C1_C2_C2,8,"                                28.2B: Buckets, shovels, grabs & grips for cranes & excavators",10
+C4_C2_C1_C1_C1_C2_C2_C3,C4_C2_C1_C1_C1_C2_C2,8,                                28.3C: Parts of agricultural machinery,10
+C4_C2_C1_C1_C1_C2_C2_C4,C4_C2_C1_C1_C1_C2_C2,8,                                28.4B: Parts of specialised machine tools,10
+C4_C2_C1_C1_C1_C2_C2_C5,C4_C2_C1_C1_C1_C2_C2,8,                                28.9C: Parts of special purpose machinery n.e.s,10
+C4_C2_C1_C1_C1_C2_C3,C4_C2_C1_C1_C1_C2,7,                            73I: Metal working machinery (intermediate),10
+C4_C2_C1_C1_C1_C2_C3_C1,C4_C2_C1_C1_C1_C2_C3,8,                                27.9B: Parts of electric soldering & welding machines,10
+C4_C2_C1_C1_C1_C2_C3_C2,C4_C2_C1_C1_C1_C2_C3,8,                                28.2D: Parts of non-electric soldering & welding machines,10
+C4_C2_C1_C1_C1_C2_C3_C3,C4_C2_C1_C1_C1_C2_C3,8,"                                28.4D: Parts of metal working tools, work holders & tool holders",10
+C4_C2_C1_C1_C1_C2_C3_C4,C4_C2_C1_C1_C1_C2_C3,8,                                28.9E: Parts of machines for metallurgy,10
+C4_C2_C1_C1_C1_C2_C4,C4_C2_C1_C1_C1_C2,7,                            74I: General industrial machinery (intermediate),10
+C4_C2_C1_C1_C1_C2_C4_C1,C4_C2_C1_C1_C1_C2_C4,8,                                25.9B: Ships'propellers,10
+C4_C2_C1_C1_C1_C2_C4_C2,C4_C2_C1_C1_C1_C2_C4,8,"                                28.1E: Tapes, valves, bearings, gears etc",10
+C4_C2_C1_C1_C1_C2_C4_C3,C4_C2_C1_C1_C1_C2_C4,8,                                28.2G: Parts of general purpose machinery n.e.s,10
+C4_C2_C1_C1_C1_C3,C4_C2_C1_C1_C1,6,                        7MK: Mechanical machinery (capital),10
+C4_C2_C1_C1_C1_C3_C1,C4_C2_C1_C1_C1_C3,7,                            71MK: Mechanical power generators (capital),10
+C4_C2_C1_C1_C1_C3_C1_C1,C4_C2_C1_C1_C1_C3_C1,8,                                20.13E: Fuel elements for nuclear reactors,10
+C4_C2_C1_C1_C1_C3_C1_C2,C4_C2_C1_C1_C1_C3_C1,8,                                25.3A: Steam generators & nuclear reactors,10
+C4_C2_C1_C1_C1_C3_C1_C3,C4_C2_C1_C1_C1_C3_C1,8,"                                28.1B: Other engines, turbines, hydraulic & pneumatic motors",10
+C4_C2_C1_C1_C1_C3_C2,C4_C2_C1_C1_C1_C3,7,                            72K: Specialised machinery (capital),10
+C4_C2_C1_C1_C1_C3_C2_C1,C4_C2_C1_C1_C1_C3_C2,8,                                28.2A: Sheet-fed offset printing machinery,10
+C4_C2_C1_C1_C1_C3_C2_C2,C4_C2_C1_C1_C1_C3_C2,8,                                28.3B: Agricultural machinery n.e.s,10
+C4_C2_C1_C1_C1_C3_C2_C3,C4_C2_C1_C1_C1_C3_C2,8,                                28.4A: Specialised machine tools,10
+C4_C2_C1_C1_C1_C3_C2_C4,C4_C2_C1_C1_C1_C3_C2,8,                                28.9B: Special purpose machinery n.e.s,10
+C4_C2_C1_C1_C1_C3_C3,C4_C2_C1_C1_C1_C3,7,                            73K: Metal working machinery (capital),10
+C4_C2_C1_C1_C1_C3_C3_C1,C4_C2_C1_C1_C1_C3_C3,8,                                27.9A: Electric soldering & welding machines,10
+C4_C2_C1_C1_C1_C3_C3_C2,C4_C2_C1_C1_C1_C3_C3,8,                                28.2C: Non-electric soldering & welding machines,10
+C4_C2_C1_C1_C1_C3_C3_C3,C4_C2_C1_C1_C1_C3_C3,8,                                28.4C: Metal working tools,10
+C4_C2_C1_C1_C1_C3_C3_C4,C4_C2_C1_C1_C1_C3_C3,8,                                28.9D: Machinery for metallurgy,10
+C4_C2_C1_C1_C1_C3_C4,C4_C2_C1_C1_C1_C3,7,                            74K: General industrial machinery (capital),10
+C4_C2_C1_C1_C1_C3_C4_C1,C4_C2_C1_C1_C1_C3_C4,8,                                25.7B: Moulds for metal foundry,10
+C4_C2_C1_C1_C1_C3_C4_C2,C4_C2_C1_C1_C1_C3_C4,8,                                27.5C: Non-electric water heaters,10
+C4_C2_C1_C1_C1_C3_C4_C3,C4_C2_C1_C1_C1_C3_C4,8,                                28.1D: Pumps & compressors,10
+C4_C2_C1_C1_C1_C3_C4_C4,C4_C2_C1_C1_C1_C3_C4,8,                                28.2F: General purpose machinery n.e.s,10
+C4_C2_C1_C1_C1_C3_C4_C5,C4_C2_C1_C1_C1_C3_C4,8,                                28.3D: Agricultural spraying machinery,10
+C4_C2_C1_C1_C1_C3_C4_C6,C4_C2_C1_C1_C1_C3_C4,8,                                28.9F: Special purpose machinery classified as general purpose in SITC,10
+C4_C2_C1_C1_C1_C3_C4_C7,C4_C2_C1_C1_C1_C3_C4,8,                                32.5B: Medical sterilisers & laboratory centrifuges,10
+C4_C2_C1_C1_C2,C4_C2_C1_C1,5,                    7E: Electrical machinery,10
+C4_C2_C1_C1_C2_C1,C4_C2_C1_C1_C2,6,                        7EC: Electrical machinery (consumer),10
+C4_C2_C1_C1_C2_C1_C1,C4_C2_C1_C1_C2_C1,7,                            75C: Office machinery (consumer),10
+C4_C2_C1_C1_C2_C1_C1_C1,C4_C2_C1_C1_C2_C1_C1,8,                                28.2H: Pocket calculators,10
+C4_C2_C1_C1_C2_C1_C2,C4_C2_C1_C1_C2_C1,7,                            76C: Telecoms & sound equipment (consumer),10
+C4_C2_C1_C1_C2_C1_C2_C1,C4_C2_C1_C1_C2_C1_C2,8,"                                26.4A: Consumer radios, televisions etc",10
+C4_C2_C1_C1_C2_C1_C3,C4_C2_C1_C1_C2_C1,7,                            77C: Miscellaneous electrical goods (consumer),10
+C4_C2_C1_C1_C2_C1_C3_C1,C4_C2_C1_C1_C2_C1_C3,8,                                27.2A: Batteries,10
+C4_C2_C1_C1_C2_C1_C3_C2,C4_C2_C1_C1_C2_C1_C3,8,                                27.4A: Filament light bulbs,10
+C4_C2_C1_C1_C2_C1_C3_C3,C4_C2_C1_C1_C2_C1_C3,8,                                27.5D: Electric domestic appliances,10
+C4_C2_C1_C1_C2_C2,C4_C2_C1_C1_C2,6,                        7EI: Electrical machinery (intermediate),10
+C4_C2_C1_C1_C2_C2_C1,C4_C2_C1_C1_C2_C2,7,                            71EI: Electric motors (intermediate),10
+C4_C2_C1_C1_C2_C2_C1_C1,C4_C2_C1_C1_C2_C2_C1,8,                                27.1B: Parts of electric motors & generators,10
+C4_C2_C1_C1_C2_C2_C2,C4_C2_C1_C1_C2_C2,7,                            75I: Office machinery (intermediate),10
+C4_C2_C1_C1_C2_C2_C2_C1,C4_C2_C1_C1_C2_C2_C2,8,                                26.2B: Parts of computers,10
+C4_C2_C1_C1_C2_C2_C2_C2,C4_C2_C1_C1_C2_C2_C2,8,                                28.2J: Parts of office machines,10
+C4_C2_C1_C1_C2_C2_C3,C4_C2_C1_C1_C2_C2,7,                            76I: Telecoms & sound equipment (intermediate),10
+C4_C2_C1_C1_C2_C2_C3_C1,C4_C2_C1_C1_C2_C2_C3,8,                                26.1A: Pick-up cartridges,10
+C4_C2_C1_C1_C2_C2_C3_C2,C4_C2_C1_C1_C2_C2_C3,8,                                26.3B: Parts of telephone & broadcasting equipment,10
+C4_C2_C1_C1_C2_C2_C3_C3,C4_C2_C1_C1_C2_C2_C3,8,                                26.4C: Parts of sound & video equipment,10
+C4_C2_C1_C1_C2_C2_C3_C4,C4_C2_C1_C1_C2_C2_C3,8,                                26.5B: Parts of navigating equipment,10
+C4_C2_C1_C1_C2_C2_C4,C4_C2_C1_C1_C2_C2,7,                            77I: Miscellaneous electrical goods (intermediate),10
+C4_C2_C1_C1_C2_C2_C4_C1,C4_C2_C1_C1_C2_C2_C4,8,                                23.1C: Glass electrical insulators,10
+C4_C2_C1_C1_C2_C2_C4_C2,C4_C2_C1_C1_C2_C2_C4,8,                                23.4C: Ceramic insulators & insulating fittings,10
+C4_C2_C1_C1_C2_C2_C4_C3,C4_C2_C1_C1_C2_C2_C4,8,                                26.1C: Electronic components & printed circuits,10
+C4_C2_C1_C1_C2_C2_C4_C4,C4_C2_C1_C1_C2_C2_C4,8,                                26.6B: Parts of electrodiagnostic & radiological apparatus,10
+C4_C2_C1_C1_C2_C2_C4_C5,C4_C2_C1_C1_C2_C2_C4,8,"                                27.1D: Parts of electric power machinery, electricity distribution & control apparatus",10
+C4_C2_C1_C1_C2_C2_C4_C6,C4_C2_C1_C1_C2_C2_C4,8,                                27.2B: Accumulators and parts of batteries & accumulators,10
+C4_C2_C1_C1_C2_C2_C4_C7,C4_C2_C1_C1_C2_C2_C4,8,"                                27.3A: Electronic & electric wires, cable trays for electrical circuites",10
+C4_C2_C1_C1_C2_C2_C4_C8,C4_C2_C1_C1_C2_C2_C4,8,                                27.4B: Non-filament bulbs,10
+C4_C2_C1_C1_C2_C2_C4_C9,C4_C2_C1_C1_C2_C2_C4,8,                                27.5F: Parts of electric domestic appliances,10
+C4_C2_C1_C1_C2_C2_C4_C10,C4_C2_C1_C1_C2_C2_C4_,8,                                27.9D: Parts of other electrical equipment,10
+C4_C2_C1_C1_C2_C2_C4_C11,C4_C2_C1_C1_C2_C2_C4_,8,                                29.3A: Electrical equipment for motor vehicles,10
+C4_C2_C1_C1_C2_C2_C4_C12,C4_C2_C1_C1_C2_C2_C4_,8,                                38.1P: Waste & scrap of batteries & accumulators,10
+C4_C2_C1_C1_C2_C3,C4_C2_C1_C1_C2,6,                        7EK: Electrical machinery (intermediate),10
+C4_C2_C1_C1_C2_C3_C1,C4_C2_C1_C1_C2_C3,7,                            71EK: Electric motors (capital),10
+C4_C2_C1_C1_C2_C3_C1_C1,C4_C2_C1_C1_C2_C3_C1,8,                                27.1A: Electric motors & generators,10
+C4_C2_C1_C1_C2_C3_C2,C4_C2_C1_C1_C2_C3,7,                            75K: Office machinery (capital),10
+C4_C2_C1_C1_C2_C3_C2_C1,C4_C2_C1_C1_C2_C3_C2,8,                                26.2A: Computers & peripherals,10
+C4_C2_C1_C1_C2_C3_C2_C2,C4_C2_C1_C1_C2_C3_C2,8,                                28.2I: Other office machines,10
+C4_C2_C1_C1_C2_C3_C2_C3,C4_C2_C1_C1_C2_C3_C2,8,                                28.9G: Printers & fax machines not connected to computers,10
+C4_C2_C1_C1_C2_C3_C3,C4_C2_C1_C1_C2_C3,7,                            76K: Telecoms & sound equipment (capital),10
+C4_C2_C1_C1_C2_C3_C3_C1,C4_C2_C1_C1_C2_C3_C3,8,                                26.2C: Computer monitors & projectors,10
+C4_C2_C1_C1_C2_C3_C3_C2,C4_C2_C1_C1_C2_C3_C3,8,                                26.3A: Telephone & broadcasting equipment,10
+C4_C2_C1_C1_C2_C3_C3_C3,C4_C2_C1_C1_C2_C3_C3,8,                                26.4B: Industrial sound & video equipment,10
+C4_C2_C1_C1_C2_C3_C3_C4,C4_C2_C1_C1_C2_C3_C3,8,                                26.5A: Navigating equipment,10
+C4_C2_C1_C1_C2_C3_C3_C5,C4_C2_C1_C1_C2_C3_C3,8,                                26.7A: Digital cameras,10
+C4_C2_C1_C1_C2_C3_C3_C6,C4_C2_C1_C1_C2_C3_C3,8,                                28.2K: Dictating machines,10
+C4_C2_C1_C1_C2_C3_C4,C4_C2_C1_C1_C2_C3,7,                            77K: Miscellaneous electrical goods (capital),10
+C4_C2_C1_C1_C2_C3_C4_C1,C4_C2_C1_C1_C2_C3_C4,8,                                23.4B: Non-metal magnets,10
+C4_C2_C1_C1_C2_C3_C4_C2,C4_C2_C1_C1_C2_C3_C4,8,                                25.9C: Metal magnets,10
+C4_C2_C1_C1_C2_C3_C4_C3,C4_C2_C1_C1_C2_C3_C4,8,                                26.1B: Multi-chip integrated circuits,10
+C4_C2_C1_C1_C2_C3_C4_C4,C4_C2_C1_C1_C2_C3_C4,8,                                26.3C: Burglar & fire alarms,10
+C4_C2_C1_C1_C2_C3_C4_C5,C4_C2_C1_C1_C2_C3_C4,8,                                26.6A: Electrodiagnostic & radiological apparatus,10
+C4_C2_C1_C1_C2_C3_C4_C6,C4_C2_C1_C1_C2_C3_C4,8,                                27.1C: Electric power machinery,10
+C4_C2_C1_C1_C2_C3_C4_C7,C4_C2_C1_C1_C2_C3_C4,8,                                27.5E: Non-electric vacuum cleaners,10
+C4_C2_C1_C1_C2_C3_C4_C8,C4_C2_C1_C1_C2_C3_C4,8,                                27.9C: Other electrical equipment,10
+C4_C2_C1_C1_C2_C3_C4_C9,C4_C2_C1_C1_C2_C3_C4,8,                                28.2L: Electromechanical hand tools,10
+C4_C2_C1_C1_C2_C3_C4_C10,C4_C2_C1_C1_C2_C3_C4_,8,                                28.4E: Electroplating machinery,10
+C4_C2_C1_C1_C2_C3_C4_C11,C4_C2_C1_C1_C2_C3_C4_,8,                                28.9H: Sun-tanning equipment,10
+C4_C2_C1_C2,C4_C2_C1,4,                78: Road vehicles,10
+C4_C2_C1_C2_C1,C4_C2_C1_C2,5,                    78M: Cars,10
+C4_C2_C1_C2_C1_C1,C4_C2_C1_C2_C1,6,                        29.1B: Cars,10
+C4_C2_C1_C2_C2,C4_C2_C1_C2,5,                    78C: Road vehicles other than cars (consumer),10
+C4_C2_C1_C2_C2_C1,C4_C2_C1_C2_C2,6,                        29.2A: Caravans,10
+C4_C2_C1_C2_C2_C2,C4_C2_C1_C2_C2,6,"                        30.9A: Motor cycles, bicyles & invalid carriage",10
+C4_C2_C1_C2_C3,C4_C2_C1_C2,5,                    78I: Road vehicles other than cars (intermediate),10
+C4_C2_C1_C2_C3_C1,C4_C2_C1_C2_C3,6,                        29.2C: Motor vehicle bodies and parts of trailers & other vehicles,10
+C4_C2_C1_C2_C3_C2,C4_C2_C1_C2_C3,6,                        29.3B: Other motor vehicle parts & accessories,10
+C4_C2_C1_C2_C3_C3,C4_C2_C1_C2_C3,6,"                        30.9C: Motor cycle, bicycle & invalid carriage parts & accessories",10
+C4_C2_C1_C2_C4,C4_C2_C1_C2,5,                    78K: Road vehicles other than cars (capital),10
+C4_C2_C1_C2_C4_C1,C4_C2_C1_C2_C4,6,                        28.3E: Self-loading trailers for agriculture,10
+C4_C2_C1_C2_C4_C2,C4_C2_C1_C2_C4,6,                        28.9I: Dumpers for off-highway use,10
+C4_C2_C1_C2_C4_C3,C4_C2_C1_C2_C4,6,                        29.1C: Other road motor vehicles,10
+C4_C2_C1_C2_C4_C4,C4_C2_C1_C2_C4,6,                        29.2B: Other trailers,10
+C4_C2_C1_C2_C4_C5,C4_C2_C1_C2_C4,6,                        30.9B: Vehicles not mechanically propelled,10
+C4_C2_C1_C3,C4_C2_C1,4,                79: Other transport equipment,10
+C4_C2_C1_C3_C1,C4_C2_C1_C3,5,                    791I: Railway equipment (intermediate),10
+C4_C2_C1_C3_C1_C1,C4_C2_C1_C3_C1,6,                        30.2B: Railway parts,10
+C4_C2_C1_C3_C2,C4_C2_C1_C3,5,                    791K: Railway equipment (capital),10
+C4_C2_C1_C3_C2_C1,C4_C2_C1_C3_C2,6,                        30.2A: Railway vehicles & equipment,10
+C4_C2_C1_C3_C3,C4_C2_C1_C3,5,                    792/3: Ships & aircraft,10
+C4_C2_C1_C3_C3_C1,C4_C2_C1_C3_C3,6,                        792: Aircraft,10
+C4_C2_C1_C3_C3_C1_C1,C4_C2_C1_C3_C3_C1,7,                            28.9J: Aircraft launching gear,10
+C4_C2_C1_C3_C3_C1_C2,C4_C2_C1_C3_C3_C1,7,                            30.3B: Aircraft,10
+C4_C2_C1_C3_C3_C2,C4_C2_C1_C3_C3,6,                        793: Ships,10
+C4_C2_C1_C3_C3_C2_C1,C4_C2_C1_C3_C3_C2,7,"                            30.1: Ships, boats & floating structures",10
+C4_C2_C1_C3_C3_C2_C2,C4_C2_C1_C3_C3_C2,7,                            38.1Q: Ships for breaking up,10
+C4_C2_C2,C4_C2,3,            8: Miscellaneous manufactures,10
+C4_C2_C2_C1,C4_C2_C2,4,                84and85: Clothing & footwear,10
+C4_C2_C2_C1_C1,C4_C2_C2_C1,5,                    84: Clothing,10
+C4_C2_C2_C1_C1_C1,C4_C2_C2_C1_C1,6,                        13.9D: Imitation fur,10
+C4_C2_C2_C1_C1_C2,C4_C2_C2_C1_C1,6,                        14.1C: Clothes & clothing accessories,10
+C4_C2_C2_C1_C1_C3,C4_C2_C2_C1_C1,6,                        14.2: Articles of fur,10
+C4_C2_C2_C1_C1_C4,C4_C2_C2_C1_C1,6,                        14.3: Knitted & crotcheted hosiery & cardigans,10
+C4_C2_C2_C1_C1_C5,C4_C2_C2_C1_C1,6,                        22.1D: Rubber clothes & clothing accessories,10
+C4_C2_C2_C1_C1_C6,C4_C2_C2_C1_C1,6,                        22.2E: Plastic clothes & clothing accessories,10
+C4_C2_C2_C1_C1_C7,C4_C2_C2_C1_C1,6,                        32.9A: Protective gloves & headwear,10
+C4_C2_C2_C1_C2,C4_C2_C2_C1,5,                    85: Footwear,10
+C4_C2_C2_C1_C2_C1,C4_C2_C2_C1_C2,6,                        15.2: Footwear,10
+C4_C2_C2_C1_C2_C2,C4_C2_C2_C1_C2,6,                        16.2D: Wooden parts of footwear,10
+C4_C2_C2_C1_C2_C3,C4_C2_C2_C1_C2,6,                        22.1E: Rubber soles & heels,10
+C4_C2_C2_C1_C2_C4,C4_C2_C2_C1_C2,6,                        22.2F: Plastic soles & heels,10
+C4_C2_C2_C1_C2_C5,C4_C2_C2_C1_C2,6,                        32.3A: Ski-boots,10
+C4_C2_C2_C2,C4_C2_C2,4,                87and88: Scientific & photographic,10
+C4_C2_C2_C2_C1,C4_C2_C2_C2,5,                    87and88C: Scientific & photographic (consumer),10
+C4_C2_C2_C2_C1_C1,C4_C2_C2_C2_C1,6,                        87C: Scientific instruments (consumer),10
+C4_C2_C2_C2_C1_C1_C1,C4_C2_C2_C2_C1_C1,7,                            26.7B: Binoculars,10
+C4_C2_C2_C2_C1_C2,C4_C2_C2_C2_C1,6,                        88C: Photographic & optical goods & clocks (consumer),10
+C4_C2_C2_C2_C1_C2_C1,C4_C2_C2_C2_C1_C2,7,                            15.1C: Non-metal watch straps,10
+C4_C2_C2_C2_C1_C2_C2,C4_C2_C2_C2_C1_C2,7,                            26.5E: Consumer watches & clocks,10
+C4_C2_C2_C2_C1_C2_C3,C4_C2_C2_C2_C1_C2,7,                            26.7E: Cameras & other photographic equipment,10
+C4_C2_C2_C2_C1_C2_C4,C4_C2_C2_C2_C1_C2,7,                            32.1C: Metal watch straps,10
+C4_C2_C2_C2_C1_C2_C5,C4_C2_C2_C2_C1_C2,7,                            32.5D: Spectacles & spectacle lenses,10
+C4_C2_C2_C2_C2,C4_C2_C2_C2,5,                    87and88I: Scientific & photographic (intermediate),10
+C4_C2_C2_C2_C2_C1,C4_C2_C2_C2_C2,6,                        87I: Scientific instruments (intermediate),10
+C4_C2_C2_C2_C2_C1_C1,C4_C2_C2_C2_C2_C1,7,                            26.5D: Parts of measuring & testing equipment,10
+C4_C2_C2_C2_C2_C1_C2,C4_C2_C2_C2_C2_C1,7,                            26.7D: Parts of optical instruments,10
+C4_C2_C2_C2_C2_C2,C4_C2_C2_C2_C2,6,                        88I: Photographic & optical goods & clocks (intermediate),10
+C4_C2_C2_C2_C2_C2_C1,C4_C2_C2_C2_C2_C2,7,                            20.5D: Unexposed photographic film & other photographic supplies,10
+C4_C2_C2_C2_C2_C2_C2,C4_C2_C2_C2_C2_C2,7,                            26.5G: Instrumental panel clocks and parts of watches & clocks,10
+C4_C2_C2_C2_C2_C2_C3,C4_C2_C2_C2_C2_C2,7,                            26.7G: Other optical goods,10
+C4_C2_C2_C2_C2_C2_C4,C4_C2_C2_C2_C2_C2,7,                            27.3B: Optical fibre bundles,10
+C4_C2_C2_C2_C2_C2_C5,C4_C2_C2_C2_C2_C2,7,                            32.5E: Spectacle frames & contact lenses,10
+C4_C2_C2_C2_C2_C2_C6,C4_C2_C2_C2_C2_C2,7,                            59.1A: Exposed cinematographic film,10
+C4_C2_C2_C2_C2_C2_C7,C4_C2_C2_C2_C2_C2,7,                            74.2: Exposed photographic film,10
+C4_C2_C2_C2_C3,C4_C2_C2_C2,5,                    87and88K: Scientific & photographic (capital),10
+C4_C2_C2_C2_C3_C1,C4_C2_C2_C2_C3,6,                        87K: Scientific instruments (capital),10
+C4_C2_C2_C2_C3_C1_C1,C4_C2_C2_C2_C3_C1,7,                            26.5C: Measuring & testing equipment,10
+C4_C2_C2_C2_C3_C1_C2,C4_C2_C2_C2_C3_C1,7,                            26.7C: Other optical instruments,10
+C4_C2_C2_C2_C3_C1_C3,C4_C2_C2_C2_C3_C1,7,"                            28.2M: Levels, tape measures etc",10
+C4_C2_C2_C2_C3_C1_C4,C4_C2_C2_C2_C3_C1,7,                            28.9K: Machines for balancing mechanical parts,10
+C4_C2_C2_C2_C3_C1_C5,C4_C2_C2_C2_C3_C1,7,                            32.5C: Medical instruments n.e.s,10
+C4_C2_C2_C2_C3_C1_C6,C4_C2_C2_C2_C3_C1,7,"                            32.9B: Breathing appliances, gas masks & demonstration models",10
+C4_C2_C2_C2_C3_C2,C4_C2_C2_C2_C3,6,                        88K: Photographic & optical goods & clocks (capital),10
+C4_C2_C2_C2_C3_C2_C1,C4_C2_C2_C2_C3_C2,7,                            26.5F: Industrial clocks,10
+C4_C2_C2_C2_C3_C2_C2,C4_C2_C2_C2_C3_C2,7,                            26.7F: Cinematographic cameras & projectors,10
+C4_C2_C2_C3,C4_C2_C2,4,                8O: Other manufactures,10
+C4_C2_C2_C3_C1,C4_C2_C2_C3,5,                    896: Works of art,10
+C4_C2_C2_C3_C1_C1,C4_C2_C2_C3_C1,6,                        90.0: Paintings & sculptures,10
+C4_C2_C2_C3_C1_C2,C4_C2_C2_C3_C1,6,                        91.0: Antiques & collections,10
+C4_C2_C2_C3_C2,C4_C2_C2_C3,5,                    897C: Jewellery,10
+C4_C2_C2_C3_C2_C1,C4_C2_C2_C3_C2,6,                        32.1D: Jewellery,10
+C4_C2_C2_C3_C3,C4_C2_C2_C3,5,                    8OC: Other miscellaneous manufactures (consumer),10
+C4_C2_C2_C3_C3_C1,C4_C2_C2_C3_C3,6,"                        81C: Plumbing, heating & lighting fixtures (consumer)",10
+C4_C2_C2_C3_C3_C1_C1,C4_C2_C2_C3_C3_C1,7,                            27.4C: Table & floor-standing lamps,10
+C4_C2_C2_C3_C3_C2,C4_C2_C2_C3_C3,6,                        82C: Furniture (consumer),10
+C4_C2_C2_C3_C3_C2_C1,C4_C2_C2_C3_C3_C2,7,                            31.0A: Household furniture,10
+C4_C2_C2_C3_C3_C2_C2,C4_C2_C2_C3_C3_C2,7,"                            13.9C: Cushions, pillows, quilts etc",10
+C4_C2_C2_C3_C3_C3,C4_C2_C2_C3_C3,6,"                        83: Travel goods, handbags etc",10
+C4_C2_C2_C3_C3_C3_C1,C4_C2_C2_C3_C3_C3,7,"                            15.1B: Travel goods, handbags etc",10
+C4_C2_C2_C3_C3_C4,C4_C2_C2_C3_C3,6,                        89OC: Other manufactures (consumer),10
+C4_C2_C2_C3_C3_C4_C1,C4_C2_C2_C3_C3_C4,7,                            13.9E: Powder puffs,10
+C4_C2_C2_C3_C3_C4_C2,C4_C2_C2_C3_C3_C4,7,"                            16.2E: Basketware, wickerwork & other articles of plaiting materials",10
+C4_C2_C2_C3_C3_C4_C3,C4_C2_C2_C3_C3_C4,7,                            20.5E: Matches,10
+C4_C2_C2_C3_C3_C4_C4,C4_C2_C2_C3_C3_C4,7,                            22.2G: Other plastic articles,10
+C4_C2_C2_C3_C3_C4_C5,C4_C2_C2_C3_C3_C4,7,                            26.2D: Solid-state non-volatile storage devices,10
+C4_C2_C2_C3_C3_C4_C6,C4_C2_C2_C3_C3_C4,7,                            26.4D: Video game consoles,10
+C4_C2_C2_C3_C3_C4_C7,C4_C2_C2_C3_C3_C4,7,                            26.6C: Hearing aids & pacemakers,10
+C4_C2_C2_C3_C3_C4_C8,C4_C2_C2_C3_C3_C4,7,                            26.8: Magnetic & optical media,10
+C4_C2_C2_C3_C3_C4_C9,C4_C2_C2_C3_C3_C4,7,"                            27.3C: Plastic ducting, trunking & cable trays for electrical circuits",10
+C4_C2_C2_C3_C3_C4_C10,C4_C2_C2_C3_C3_C4_,7,                            27.4E: Christmas lights,10
+C4_C2_C2_C3_C3_C4_C11,C4_C2_C2_C3_C3_C4_,7,                            30.9D: Baby carriages,10
+C4_C2_C2_C3_C3_C4_C12,C4_C2_C2_C3_C3_C4_,7,                            32.2A: Musical instruments,10
+C4_C2_C2_C3_C3_C4_C13,C4_C2_C2_C3_C3_C4_,7,                            32.3B: Sports goods,10
+C4_C2_C2_C3_C3_C4_C14,C4_C2_C2_C3_C3_C4_,7,                            32.4A: Consumer games & toys,10
+C4_C2_C2_C3_C3_C4_C15,C4_C2_C2_C3_C3_C4_,7,                            32.5F: Orthopaedic appliances,10
+C4_C2_C2_C3_C3_C4_C16,C4_C2_C2_C3_C3_C4_,7,                            32.9C: Other manufactured consumer articles,10
+C4_C2_C2_C3_C3_C4_C17,C4_C2_C2_C3_C3_C4_,7,                            58.1A: Consumer printed matter,10
+C4_C2_C2_C3_C3_C4_C18,C4_C2_C2_C3_C3_C4_,7,                            58.2: Packaged computer software,10
+C4_C2_C2_C3_C3_C4_C19,C4_C2_C2_C3_C3_C4_,7,                            59.1B: Video recordings,10
+C4_C2_C2_C3_C3_C4_C20,C4_C2_C2_C3_C3_C4_,7,                            59.2: Audio recordings & printed music,10
+C4_C2_C2_C3_C4,C4_C2_C2_C3,5,                    8OI: Other miscellaneous manufactures (intermediate),10
+C4_C2_C2_C3_C4_C1,C4_C2_C2_C3_C4,6,"                        81I: Plumbing, heating & lighting fixtures (intermediate)",10
+C4_C2_C2_C3_C4_C1_C1,C4_C2_C2_C3_C4_C1,7,                            16.2C: Prefabricated buildings of wood,10
+C4_C2_C2_C3_C4_C1_C2,C4_C2_C2_C3_C4_C1,7,                            22.2D: Plastic parts of lamps,10
+C4_C2_C2_C3_C4_C1_C3,C4_C2_C2_C3_C4_C1,7,                            23.1D: Glass parts of lamps,10
+C4_C2_C2_C3_C4_C1_C4,C4_C2_C2_C3_C4_C1,7,                            23.4D: Ceramic sanitary fixtures,10
+C4_C2_C2_C3_C4_C1_C5,C4_C2_C2_C3_C4_C1,7,                            23.6C: Prefabricated buildings of concrete,10
+C4_C2_C2_C3_C4_C1_C6,C4_C2_C2_C3_C4_C1,7,                            25.1B: Prefrabricated buildings of metal,10
+C4_C2_C2_C3_C4_C1_C7,C4_C2_C2_C3_C4_C1,7,                            25.2C: Parts of central heating boilers,10
+C4_C2_C2_C3_C4_C1_C8,C4_C2_C2_C3_C4_C1,7,                            27.4D: Other lamps,10
+C4_C2_C2_C3_C4_C2,C4_C2_C2_C3_C4,6,                        82I: Furniture (intermediate),10
+C4_C2_C2_C3_C4_C2_C1,C4_C2_C2_C3_C4_C2,7,                            29.3C: Seats for motor vehicles,10
+C4_C2_C2_C3_C4_C2_C2,C4_C2_C2_C3_C4_C2,7,                            30.3C: Seats for aircraft,10
+C4_C2_C2_C3_C4_C2_C3,C4_C2_C2_C3_C4_C2,7,                            31.0C: Parts of assets,10
+C4_C2_C2_C3_C4_C3,C4_C2_C2_C3_C4,6,                        89I: Other manufactures (intermediate),10
+C4_C2_C2_C3_C4_C3_C1,C4_C2_C2_C3_C4_C3,7,                            10.1G: Worked bird skins & feathers,10
+C4_C2_C2_C3_C4_C3_C2,C4_C2_C2_C3_C4_C3,7,                            13.9F: Parachutes,10
+C4_C2_C2_C3_C4_C3_C3,C4_C2_C2_C3_C4_C3,7,                            16.2F: Handles for umbrellas & walking sticks,10
+C4_C2_C2_C3_C4_C3_C4,C4_C2_C2_C3_C4_C3,7,                            17.2C: Paper labels,10
+C4_C2_C2_C3_C4_C3_C5,C4_C2_C2_C3_C4_C3,7,                            20.5F: Writing & drawing ink,10
+C4_C2_C2_C3_C4_C3_C6,C4_C2_C2_C3_C4_C3,7,"                            22.2H: Plastic packing goods, floor coverings, office supplies etc",10
+C4_C2_C2_C3_C4_C3_C7,C4_C2_C2_C3_C4_C3,7,                            25.9E: Metal office supplies,10
+C4_C2_C2_C3_C4_C3_C8,C4_C2_C2_C3_C4_C3,7,                            32.2B: Musical accessories & parts of musical instruments,10
+C4_C2_C2_C3_C4_C3_C9,C4_C2_C2_C3_C4_C3,7,                            32.9E: Other manufactured articles,10
+C4_C2_C2_C3_C4_C3_C10,C4_C2_C2_C3_C4_C3_,7,                            58.1B: Commercial printed matter,10
+C4_C2_C2_C3_C4_C3_C11,C4_C2_C2_C3_C4_C3_,7,                            71.1: Architectural plans & drawings,10
+C4_C2_C2_C3_C5,C4_C2_C2_C3,5,                    8OK: Other miscellaneous manufactures (capital),10
+C4_C2_C2_C3_C5_C1,C4_C2_C2_C3_C5,6,"                        81K: Plumbing, heating & lighting fixtures (capital)",10
+C4_C2_C2_C3_C5_C1_C1,C4_C2_C2_C3_C5_C1,7,                            25.2B: Central heating radiators & boilers,10
+C4_C2_C2_C3_C5_C1_C2,C4_C2_C2_C3_C5_C1,7,                            27.5G: Non-electric air heaters,10
+C4_C2_C2_C3_C5_C2,C4_C2_C2_C3_C5,6,                        82K: Furniture (capital),10
+C4_C2_C2_C3_C5_C2_C1,C4_C2_C2_C3_C5_C2,7,                            31.0B: Office furniture,10
+C4_C2_C2_C3_C5_C3,C4_C2_C2_C3_C5,6,                        89K: Other manufactures (capital),10
+C4_C2_C2_C3_C5_C3_C1,C4_C2_C2_C3_C5_C3,7,                            24.4F: Platinum catalysts,10
+C4_C2_C2_C3_C5_C3_C2,C4_C2_C2_C3_C5_C3,7,                            25.9D: Metal office equipment,10
+C4_C2_C2_C3_C5_C3_C3,C4_C2_C2_C3_C5_C3,7,                            26.1D: Smart cards,10
+C4_C2_C2_C3_C5_C3_C4,C4_C2_C2_C3_C5_C3,7,"                            28.9L: Fairground amusements, casino tables etc",10
+C4_C2_C2_C3_C5_C3_C5,C4_C2_C2_C3_C5_C3,7,                            32.1E: Other articles of precious metal,10
+C4_C2_C2_C3_C5_C3_C6,C4_C2_C2_C3_C5_C3,7,                            32.4B: Amusement arcade games,10
+C4_C2_C2_C3_C5_C3_C7,C4_C2_C2_C3_C5_C3,7,                            32.9D: Tailors' dummies,10
+C5,C0,1,    9: Unspecified goods,10
+C5_C1,C5,2,        91: Parcel Post,10
+C5_C1_C1,C5_C1,3,            13.9P: Other textiles (Post),10
+C5_C1_C2,C5_C1,3,            14.1P: Other wearing apparel (Post),10
+C5_C1_C3,C5_C1,3,            22.2P: Other plastic products (Post),10
+C5_C1_C4,C5_C1,3,            25.9P: Other fabricated metal products (Post),10
+C5_C1_C5,C5_C1,3,            26.2P: Other computers & peripherals (Post),10
+C5_C1_C6,C5_C1,3,            26.3P: Other communication equipment (Post),10
+C5_C1_C7,C5_C1,3,"            26.5P: Other M, T & N equipment, watches and clocks (Post)",10
+C5_C1_C8,C5_C1,3,            29.3P: Other motor vehicle parts & accessories (Post),10
+C5_C1_C9,C5_C1,3,            32.1P: Other jewellery and related articles (Post),10
+C5_C1_C10,C5_C1_,3,            32.5P: Other medical & dental I&S (Post),10
+C5_C2,C5,2,        9OG: Miscellaneous unspecified goods,10
+C5_C2_C1,C5_C2,3,            96: Coins,10
+C5_C2_C1_C1,C5_C2_C1,4,                32.1F: Coins,10
+C5_C2_C2,C5_C2,3,            97: Non-monetary gold,10
+C5_C2_C2_C1,C5_C2_C2,4,                24.4G: Non-monetary gold,10
+C5_C2_C2_C2,C5_C2_C2,4,                38.1R: Gold waste,10
+C5_C2_C3,C5_C2,3,            98: Defence equipment,10
+C5_C2_C3_C1,C5_C2_C3,4,                25.4: Weapons & ammunition,10
+C5_C2_C3_C2,C5_C2_C3,4,"                25.7C: Swords, bayonets etc",10
+C5_C2_C3_C3,C5_C2_C3,4,                30.4: Military fighting vehicles,10

@@ -443,13 +443,7 @@ function ready (error, graphdata, root){
         .domain([0, height])
         .range([0, height]);
 
-    treemap = d3.treemap()
-    //     .children(function(d, depth) { return depth ? null : d._children; })
-    //     .sort(function(a, b) { return a.vals[0] - b.vals[0]; })
-    //     .ratio(height / width * ratiovar * (1 + Math.sqrt(5)))
-		// .value(function(d) { return d.vals[0]/1000; })
-    .size([width,height])
-        .round(false);
+
 
      svg = d3.select("#chart")
 		.append("svg")
@@ -458,44 +452,55 @@ function ready (error, graphdata, root){
 		.attr("height", height + "px")
 		//.attr("viewBox", "0 0 "+width+" "+ (height))
 		.attr("preserveAspectRatio", "xMidYMid meet")
-        .style("margin-left", -margin.left + "px")
-        .style("margin.right", -margin.right + "px")
-      .append("g")
-	  	.attr("id", "tree")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+    .style("margin-left", -margin.left + "px")
+    .style("margin.right", -margin.right + "px")
+    .append("g")
+  	.attr("id", "tree")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
        // .style("shape-rendering", "crispEdges");
 
      grandparent = svg.append("g")
         .attr("class", "grandparent")
-	 	.append("rect")
-	 	.attr("id", "gparent")
-		.attr("y", -margin.top)
-		.attr("width", width)
-		.attr("height", margin.top);
+    	 	.append("rect")
+    	 	.attr("id", "gparent")
+    		.attr("y", -margin.top)
+    		.attr("width", width)
+    		.attr("height", margin.top);
 
+        treemap = d3.treemap()
+        //     .children(function(d, depth) { return depth ? null : d._children; })
+        //     .sort(function(a, b) { return a.vals[0] - b.vals[0]; })
+        //     .ratio(height / width * ratiovar * (1 + Math.sqrt(5)))
+        // .value(function(d) { return d.vals[0]/1000; })
+        .size([width,height])
+            .round(false);
+
+}//end makeChart
     var root2 = d3.hierarchy(root)
     		      .eachBefore(function(d) { d.id = (d.parent ? d.parent.id + "." : "") + d.data.desc; })
     		      .sum((d) => d.vals[0])
     		      .sort(function(a, b) {
+                // console.log('initial root sort a ' + a.value + ' b ' + b.value);
     		        return b.height - a.height || b.value - a.value; });
 
+console.log(root2)
 
     // d3.json("imports.json", function(root) {
-		dataset = root;
+
 		 initialize(root2);
 		 accumulate(root2);
 		 layout(root2);
      treemap(root2);
 		 display(root2);
 
-	d3.select("#blurb").select("#txt3").html("Total imports: £"+formatNumber(dataset.vals[1]/1000)+" billion");
+	d3.select("#blurb").select("#txt3").html("Total imports: £"+formatNumber(root.vals[1]/1000)+" billion");
 
 
 	// });
 
 
 
-}//end makeChart
+
 
 
       function initialize(root) {
@@ -510,7 +515,7 @@ function ready (error, graphdata, root){
       // We also take a snapshot of the original children (_children) to avoid
       // the children being overwritten when when layout is computed.
       function accumulate(d) {
-		   console.log(d)
+		   // console.log(d)
         return (d._children = d.children)
             ? d.value = d.children.reduce(function(p, v) { return p + accumulate(v); }, 0)
             : d.value;
@@ -546,8 +551,8 @@ function ready (error, graphdata, root){
         grandparent
             .datum(d.parent)
             .on("click", transition)
-//            .select("text")
-//            .text(desc(d))
+           .select("text")
+           .text(desc(d))
 
 		d3.select("#titleText")
             .datum(d.parent)
@@ -598,17 +603,19 @@ function ready (error, graphdata, root){
 
 
         function transition(d) {
-			if(d3.select(this).attr("id") != "gparent"){
-				selectedArray.push(d3.select(this).select('.parent').attr("id"))
-				selectedView = selectedArray.join().replace(/,/g , "/")
 
-				window.location.hash = encodeURI(selectedView);
-			} else {
-						selectedArray.splice(-1,1)
-						selectedView = selectedArray.join().replace(/,/g , "/")
+          //bits for URL encoding
+          if(d3.select(this).attr("id") != "gparent"){
+    				selectedArray.push(d3.select(this).select('.parent').attr("id"))
+    				selectedView = selectedArray.join().replace(/,/g , "/")
 
-						window.location.hash = encodeURI(selectedView)
-			}
+    				window.location.hash = encodeURI(selectedView);
+    			} else {
+    						selectedArray.splice(-1,1)
+    						selectedView = selectedArray.join().replace(/,/g , "/")
+
+    						window.location.hash = encodeURI(selectedView)
+    			}
 
 
 
@@ -714,26 +721,28 @@ function ready (error, graphdata, root){
 
 
 	  function rect(rect) {
-		rect.attr("x", function(d) { return x(d.x); })
-            .attr("y", function(d) { return y(d.y); })
-      		.attr("width", function(d) {
-				   widthCalc = x(d.x + d.dx) - x(d.x);
+      // console.log(d)
+	      rect.attr("x", function(d) {console.log(d); return x(d.x0); })
+            .attr("y", function(d) { return y(d.y0); })
+        		.attr("width", function(d) {
+  				   widthCalc = x(d.x0 + d.dx) - x(d.x0);
 
-				  d["widthCalc"] = widthCalc;
-				  return widthCalc;
-        	})
+  				  d["widthCalc"] = widthCalc;
+  				  return widthCalc;
+          	})
+
             .attr("height", function(d) {
-				 heightCalc =y(d.y + d.dy) - y(d.y);
-				 d["heightCalc"] = heightCalc;
-				  return heightCalc;
-     		})
+      				 heightCalc =y(d.y0 + d.dy) - y(d.y0);
+      				 d["heightCalc"] = heightCalc;
+      				  return heightCalc;
+           		})
 	  }
 
-//      function desc(d) {
-//		return d.parent
-//            ? desc(d.parent) + " > " + d.desc
-//            : d.desc;
-//      }
+     function desc(d) {
+		return d.parent
+           ? desc(d.parent) + " > " + d.desc
+           : d.desc;
+     }
 
 
 	function mouseover (d){
@@ -745,7 +754,7 @@ function ready (error, graphdata, root){
 	};
 
 	function mouseout (){
-			d3.select("#blurb").select("#txt3").html("Total imports: £"+formatNumber(dataset.vals[1]/1000)+" billion");
+			d3.select("#blurb").select("#txt3").html("Total imports: £"+formatNumber(root.vals[1]/1000)+" billion");
 	};
 
 	function simulateClick(elem /* Must be the element */) {

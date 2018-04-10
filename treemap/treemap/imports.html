@@ -363,7 +363,7 @@ d3.queue()
 .defer(d3.json,"imports.json")
 .await(ready);
 
-function ready (error, graphdata, root){
+function ready (error, graphdata, imports){
 
 	pymChild = new pym.Child();
 
@@ -473,31 +473,32 @@ function ready (error, graphdata, root){
         //     .ratio(height / width * ratiovar * (1 + Math.sqrt(5)))
         // .value(function(d) { return d.vals[0]/1000; })
         .size([width,height])
-            .round(false);
+        .round(false)
+        .paddingInner(0);
 
-}//end makeChart
-    var root2 = d3.hierarchy(root)
+
+    var root = d3.hierarchy(imports)
     		      .eachBefore(function(d) { d.id = (d.parent ? d.parent.id + "." : "") + d.data.desc; })
-    		      .sum((d) => d.vals[0])
+  		        .sum((d) => d.vals[0])
     		      .sort(function(a, b) {
                 // console.log('initial root sort a ' + a.value + ' b ' + b.value);
     		        return b.height - a.height || b.value - a.value; });
 
-console.log(root2)
+console.log(root)
 
     // d3.json("imports.json", function(root) {
 
-		 initialize(root2);
-		 accumulate(root2);
-		 layout(root2);
-     treemap(root2);
-		 display(root2);
+		 initialize(root);
+		 accumulate(root);
+		 layout(root);
+     treemap(root);
+		 display(root);
 
-	d3.select("#blurb").select("#txt3").html("Total imports: £"+formatNumber(root.vals[1]/1000)+" billion");
+	d3.select("#blurb").select("#txt3").html("Total imports: £"+formatNumber(imports.vals[1]/1000)+" billion");
 
 
 	// });
-
+}//end makeChart
 
 
 
@@ -535,10 +536,10 @@ console.log(root2)
 
          // treemap.nodes({_children: d._children});
           d._children.forEach(function(c) {
-            c.x = d.x + c.x * d.dx;
-            c.y = d.y + c.y * d.dy;
-            c.dx *= d.dx;
-            c.dy *= d.dy;
+            c.x = d.x + c.x * d.x1 - d.x0 ;
+            c.y = d.y + c.y * d.y1 - d.y0 ;
+            c.dx *= d.x1 - d.x0 ;
+            c.dy *= d.y1 - d.y0 ;
             c.parent = d;
 
             layout(c);
@@ -571,26 +572,26 @@ console.log(root2)
             .on("click", transition);
 
         g.selectAll(".child")
-            .data(function(d) { return d._children || [d]; })
+            .data(function(d) { console.log(d);return d._children || [d]; })
           .enter().append("rect")
             .attr("class", "child")
-			.attr("code",function(d) { return d.code} )
-			.attr("desc",function(d) { return d.desc} )
-			.attr("id",function(d) { return d.code} )
-			.attr("vals",function(d) { return d.value/1000} )
-			.attr("realvals",function(d) { return d.value/1000} )
-			.on("mouseover", mouseover)
-			.on("mouseout", mouseout)
+      			.attr("code",function(d) { return d.code} )
+      			.attr("desc",function(d) { return d.desc} )
+      			.attr("id",function(d) { return d.code} )
+      			.attr("vals",function(d) { return d.value/1000} )
+      			.attr("realvals",function(d) { return d.value/1000} )
+      			.on("mouseover", mouseover)
+      			.on("mouseout", mouseout)
             .call(rect);
 
         g.append("rect")
             .attr("class", "parent")
-			.attr("desc",function(d) { return d.desc} )
-			.attr("id",function(d) { return d.code} )
-			.attr("vals",function(d) { return d.value/1000} )
-			.attr("realvals",function(d) { return d.value/1000} )
-			.on("mouseover", mouseover)
-			.on("mouseout", mouseout)
+      			.attr("desc",function(d) { return d.desc} )
+      			.attr("id",function(d) { return d.code} )
+      			.attr("vals",function(d) { return d.value/1000} )
+      			.attr("realvals",function(d) { return d.value/1000} )
+      			.on("mouseover", mouseover)
+      			.on("mouseout", mouseout)
             .call(rect);
 
        g.append("text")
@@ -678,7 +679,7 @@ console.log(root2)
 		// 		.attr("dy", "0.5em")
 		// 		.text(function(d){ return d.desc;});
 		// 	})
-      }
+  }//end display
 
 	  function resize(text, width){
 
@@ -721,18 +722,17 @@ console.log(root2)
 
 
 	  function rect(rect) {
-      // console.log(d)
-	      rect.attr("x", function(d) {console.log(d); return x(d.x0); })
+	      rect.attr("x", function(d) { return x(d.x0); })
             .attr("y", function(d) { return y(d.y0); })
         		.attr("width", function(d) {
-  				   widthCalc = x(d.x0 + d.dx) - x(d.x0);
+  				   widthCalc = x(d.x1) - x(d.x0);
 
   				  d["widthCalc"] = widthCalc;
   				  return widthCalc;
           	})
 
             .attr("height", function(d) {
-      				 heightCalc =y(d.y0 + d.dy) - y(d.y0);
+      				 heightCalc =y(d.y1) - y(d.y0);
       				 d["heightCalc"] = heightCalc;
       				  return heightCalc;
            		})

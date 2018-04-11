@@ -366,6 +366,7 @@ hr {
 	var heightCalc;
 
 
+
 	getSizes();
 
 
@@ -472,7 +473,7 @@ hr {
         .eachBefore(function(d) { d.id = (d.parent ? d.parent.id + "." : "") + d.data.desc; })
         .sum((d) => d.vals[0])
 	      .sort(function(a, b) {return b.height - a.height || b.value - a.value; });
-
+console.log(root)
 		 initialize(root);
 		 accumulate(root);
 		 layout(root);
@@ -502,8 +503,8 @@ hr {
       function accumulate(d) {
 		   //console.log('accumulate')
         return (d._children = d.children)
-            ? d.vals[0] = d.children.reduce(function(p, v) { return p + accumulate(v); }, 0)
-            : d.vals[0];
+            ? d.value = d.children.reduce(function(p, v) { return p + accumulate(v); }, 0)
+            : d.value;
 
       }
 
@@ -518,12 +519,12 @@ hr {
 
         if (d._children) {
 
-         treemap.nodes({_children: d._children});
+         // treemap.nodes({_children: d._children});
           d._children.forEach(function(c) {
-            c.x = d.x + c.x * d.dx;
-            c.y = d.y + c.y * d.dy;
-            c.dx *= d.dx;
-            c.dy *= d.dy;
+            c.x0 = d.x0 + c.x0 * d.x1;
+            c.y0 = d.y0 + c.y0 * d.y1;
+            c.x1 *= d.x1;
+            c.y1 *= d.y1;
             c.parent = d;
 
             layout(c);
@@ -562,8 +563,8 @@ hr {
 			.attr("code",function(d) { return d.code} )
 			.attr("desc",function(d) { return d.desc} )
 			.attr("id",function(d) { return d.code} )
-			.attr("vals",function(d) { return d.vals[0]/1000} )
-			.attr("realvals",function(d) { return d.vals[1]/1000} )
+			.attr("vals",function(d) { return d.value/1000} )
+			.attr("realvals",function(d) { return d.value/1000} )
 			.on("mouseover", mouseover)
 			.on("mouseout", mouseout)
             .call(rect);
@@ -572,8 +573,8 @@ hr {
             .attr("class", "parent")
 			.attr("desc",function(d) { return d.desc} )
 			.attr("id",function(d) { return d.code} )
-			.attr("vals",function(d) { return d.vals[0]/1000} )
-			.attr("realvals",function(d) { return d.vals[1]/1000} )
+			.attr("vals",function(d) { return d.value/1000} )
+			.attr("realvals",function(d) { return d.value/1000} )
 			.on("mouseover", mouseover)
 			.on("mouseout", mouseout)
             .call(rect);
@@ -581,7 +582,7 @@ hr {
        g.append("text")
 			.attr("class", "parentLabels")
             .attr("dy", "1em")
-            .text(function(d) { return d.desc+" £"+formatNumber(d.vals[1]/1000)+" billion"; })
+            .text(function(d) { return d.desc+" £"+formatNumber(d.value/1000)+" billion"; })
 			.call(resize)
             .call(text);
 
@@ -610,8 +611,8 @@ hr {
               t2 = g2.transition().duration(400);
 
           // Update the domain only after entering new elements.
-          x.domain([d.x, d.x + d.dx]);
-          y.domain([d.y, d.y + d.dy]);
+          x.domain([d.x0, d.x0 + d.x1]);
+          y.domain([d.y0, d.y0 + d.y1]);
 
           // Enable anti-aliasing during the transition.
           svg.style("shape-rendering", null);
@@ -654,13 +655,13 @@ hr {
 		}
 
         return g;
-		g.each( function(d,i) {
-			d3.selectAll(".children").selectAll("text")
-				.data(d._children).enter().append("text")
-				.attr("class", "childLabels")
-				.attr("dy", "0.5em")
-				.text(function(d){ return d.desc;});
-			})
+		// g.each( function(d,i) {
+		// 	d3.selectAll(".children").selectAll("text")
+		// 		.data(d._children).enter().append("text")
+		// 		.attr("class", "childLabels")
+		// 		.attr("dy", "0.5em")
+		// 		.text(function(d){ return d.desc;});
+		// 	})
       }
 
 	  function resize(text, width){
@@ -692,28 +693,28 @@ hr {
 					tspan.text(line.join(" "));
 					line = [word+" "];
 
-					tspan = text.append("tspan").attr("x", function(d) { return x(d.x) + 6; }).attr("dy",  dy + "em").text(word+" ");
+					tspan = text.append("tspan").attr("x", function(d) { return x(d.x0) + 6; }).attr("dy",  dy + "em").text(word+" ");
 
 				  }
 				 }
 			  });
 
-       d3.selectAll(".parentLabels").attr("y", function(d) { return y(d.y) + 6; })
-      					   			.attr("x", function(d) { return x(d.x) + 6; });
+       d3.selectAll(".parentLabels").attr("y", function(d) { return y(d.y0) + 6; })
+      					   			.attr("x", function(d) { return x(d.x0) + 6; });
 	  }
 
 
 	  function rect(rect) {
-		rect.attr("x", function(d) { return x(d.x); })
-            .attr("y", function(d) { return y(d.y); })
+		rect.attr("x", function(d) { return x(d.x0); })
+            .attr("y", function(d) { return y(d.y0); })
       		.attr("width", function(d) {
-				   widthCalc = x(d.x + d.dx) - x(d.x);
+				   widthCalc = x(d.x0 + d.x1) - x(d.x0);
 
 				  d["widthCalc"] = widthCalc;
 				  return widthCalc;
         	})
             .attr("height", function(d) {
-				 heightCalc =y(d.y + d.dy) - y(d.y);
+				 heightCalc =y(d.y0 + d.y1) - y(d.y0);
 				 d["heightCalc"] = heightCalc;
 				  return heightCalc;
      		})

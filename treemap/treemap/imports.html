@@ -339,8 +339,8 @@ hr {
 <script src="https://cdn.ons.gov.uk/vendor/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/modernizr.custom.56904.js"></script>
 <script src="https://cdn.ons.gov.uk/vendor/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
-<script src="https://cdn.ons.gov.uk/vendor/pym/0.4.2/pym.js" charset="utf-8"></script>
-<script src="https://cdn.ons.gov.uk/vendor/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.ons.gov.uk/vendor/pym/1.3.2/pym.js" charset="utf-8"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
 
 <script>
 
@@ -426,19 +426,20 @@ hr {
 
     height = fullheight - margin.top - margin.bottom;
 
-     x = d3.scale.linear()
+     x = d3.scaleLinear()
         .domain([0, width])
         .range([0, width]);
 
-     y = d3.scale.linear()
+     y = d3.scaleLinear()
         .domain([0, height])
         .range([0, height]);
 
-    treemap = d3.layout.treemap()
-        .children(function(d, depth) { return depth ? null : d._children; })
-        .sort(function(a, b) { return a.vals[0] - b.vals[0]; })
-        .ratio(height / width * ratiovar * (1 + Math.sqrt(5)))
-		.value(function(d) { return d.vals[0]/1000; })
+    treemap = d3.treemap()
+    //     .children(function(d, depth) { return depth ? null : d._children; })
+    //     .sort(function(a, b) { return a.vals[0] - b.vals[0]; })
+    //     .ratio(height / width * ratiovar * (1 + Math.sqrt(5)))
+		// .value(function(d) { return d.vals[0]/1000; })
+        .size([width,height])
         .round(false);
 
      svg = d3.select("#chart")
@@ -464,8 +465,14 @@ hr {
 		.attr("height", margin.top);
 
 
-    d3.json("imports.json", function(root) {
-		dataset = root;
+    d3.json("imports.json", function(imports) {
+		dataset = imports;
+
+    root = d3.hierarchy(imports)
+        .eachBefore(function(d) { d.id = (d.parent ? d.parent.id + "." : "") + d.data.desc; })
+        .sum((d) => d.vals[0])
+	      .sort(function(a, b) {return b.height - a.height || b.value - a.value; });
+
 		 initialize(root);
 		 accumulate(root);
 		 layout(root);
@@ -483,8 +490,8 @@ hr {
 
       function initialize(root) {
         root.x = root.y = 0;
-        root.dx = width;
-	    root.dy = height;
+        root.x1 = width;
+	      root.y1 = height;
         root.depth = 0;
       }
 

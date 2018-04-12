@@ -536,8 +536,8 @@ console.log(root)
 
          // treemap.nodes({_children: d._children});
           d._children.forEach(function(c) {
-            c.x = d.x + c.x * d.x1 - d.x0 ;
-            c.y = d.y + c.y * d.y1 - d.y0 ;
+            c.x = d.x0 + c.x * d.x1 - d.x0 ;
+            c.y = d.y0 + c.y * d.y1 - d.y0 ;
             c.dx *= d.x1 - d.x0 ;
             c.dy *= d.y1 - d.y0 ;
             c.parent = d;
@@ -628,8 +628,8 @@ console.log(root)
               t2 = g2.transition().duration(400);
 
           // Update the domain only after entering new elements.
-          x.domain([d.x, d.x + d.dx]);
-          y.domain([d.y, d.y + d.dy]);
+          x.domain([d.x0, d.x0 + d.x1]);
+          y.domain([d.y0, d.y0 + d.y1]);
 
           // Enable anti-aliasing during the transition.
           svg.style("shape-rendering", null);
@@ -710,14 +710,14 @@ console.log(root)
 					tspan.text(line.join(" "));
 					line = [word+" "];
 
-					tspan = text.append("tspan").attr("x", function(d) { return x(d.x) + 6; }).attr("dy",  dy + "em").text(word+" ");
+					tspan = text.append("tspan").attr("x", function(d) { return x(d.x0) + 6; }).attr("dy",  dy + "em").text(word+" ");
 
 				  }
 				 }
 			  });
 
-       d3.selectAll(".parentLabels").attr("y", function(d) { return y(d.y) + 6; })
-      					   			.attr("x", function(d) { return x(d.x) + 6; });
+       d3.selectAll(".parentLabels").attr("y", function(d) { return y(d.y0) + 6; })
+      					   			.attr("x", function(d) { return x(d.x0) + 6; });
 	  }
 
 
